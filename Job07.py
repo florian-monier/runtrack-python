@@ -1,18 +1,9 @@
-def check_language(langage):
-    if langage == "JavaScript":
-        print("Tu es un développeur web")
-    elif langage == "python":
-        print("Tu es un développeur IA")
-    elif langage == "java":
-        print("Tu es un développeur logiciel")
-    elif langage == "reactjs":
-        print("Tu es un développeur mobile")
-    else:
-        print("Un jour, je serai le meilleur développeur...")
+L = [8, 24, 48, 2, 16]
 
-check_language("JavaScript")
-check_language("python")
-check_language("java")
-check_language("reactjs")
-check_language("C#") 
+nombre_multiples_de_3 = 0
 
+for nombre in L:
+    if nombre % 3 == 0:
+        nombre_multiples_de_3 += 1
+
+print("Nombre de multiples de 3 dans la liste L :", nombre_multiples_de_3)

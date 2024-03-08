@@ -1,21 +1,11 @@
-def moyenne(note1, note2, note3):
-    return (note1 + note2 + note3) / 3
+L = [8, 24, 27, 48, 2, 16, 9, 102, 7, 84, 91]
 
-note1 = float(input("Entrez la première note : "))
-note2 = float(input("Entrez la deuxième note : "))
-note3 = float(input("Entrez la troisième note : "))
+valeur_minimale = min(L)
 
-moyenne_etudiant = moyenne(note1, note2, note3)
+valeur_maximale = max(L)
 
-print("La moyenne de l'étudiant est :", moyenne_etudiant)
+somme_elements = sum(L)
 
-if 15 <= moyenne_etudiant <= 20:
-    print("Très bon élève")
-elif 11 <= moyenne_etudiant <= 14:
-    print("Bon élève")
-elif 8 <= moyenne_etudiant <= 10:
-    print("Élève moyen")
-elif 0 <= moyenne_etudiant <= 7:
-    print("Élève devant faire des efforts")
-else:
-    print("Moyenne non valide")
+print("Valeur minimale dans la liste L :", valeur_minimale)
+print("Valeur maximale dans la liste L :", valeur_maximale)
+print("Somme des éléments de la liste L :", somme_elements)

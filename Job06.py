@@ -1,11 +1,14 @@
-def check_positivity(nombre):
-    if nombre > 0:
-        print("Positif")
-    elif nombre < 0:
-        print("Négatif")
-    else:
-        print("Le nombre est égal à zéro")
+def echange_premiere_derniere(liste):
+    """
+    Échange les valeurs de la première et de la dernière case d'une liste.
+    """
+    if len(liste) < 2:
+        print("La liste doit contenir au moins deux éléments.")
+        return
 
-check_positivity(5)
-check_positivity(-3)
-check_positivity(0)
+    liste[0], liste[-1] = liste[-1], liste[0]
+
+ma_liste = [1, 2, 3, 4, 5]
+print("Liste avant échange :", ma_liste)
+echange_premiere_derniere(ma_liste)
+print("Liste après échange :", ma_liste)
